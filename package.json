@@ -1,6 +1,6 @@
 {
   "name": "landingpage",
-  "homepage": "https://matthiaskaesch.github.io/portfolio/",
+  "homepage": "https://matthiaskaesch.github.io/landingpage/",
   "private": true,
   "scripts": {
     "dev": "vite",
