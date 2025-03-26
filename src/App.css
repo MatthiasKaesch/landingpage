@@ -4,7 +4,7 @@
   --default-bg: #fdf9ec;
   --header-bg: #282828;
   --gold: #f7d976;
-  --gold-overlay: rgba(247, 217, 118, 0.2);
+  --gold-overlay: rgba(247, 217, 118, 0.1);
 }
 
 .header {
