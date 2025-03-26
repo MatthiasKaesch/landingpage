@@ -1,36 +1,23 @@
 import './App.css'
 import './styling/normalize.css'
-import Thumbnail from './assets/images/event-table.webp'
+import ProjectCard from './components/ProjectCard/ProjectCard'
+import ProjectData from './data/projects-info.json'
 
 function App() {
   return (
     <>
       <header className="header">
-        <h1>Matthias Käsch - Frontend Developer</h1>
+        <h1 className="headline">
+          <span className="hero">Matthias Käsch</span>
+          <span className="subtitle">Frontend Developer</span>
+        </h1>
       </header>
 
       <div className="wrapper">
         <div className="projects-grid">
-          <div className="project-1">
-            <a href="https://matthiaskaesch.github.io/event-table/">
-              <img src={Thumbnail} alt="" />
-            </a>
-          </div>
-          <div className="project-2">
-            <a href="https://matthiaskaesch.github.io/event-table/">
-              <img src={Thumbnail} alt="" />
-            </a>
-          </div>
-          <div className="project-3">
-            <a href="https://matthiaskaesch.github.io/event-table/">
-              <img src={Thumbnail} alt="" />
-            </a>
-          </div>
-          <div className="project-4">
-            <a href="https://matthiaskaesch.github.io/event-table/">
-              <img src={Thumbnail} alt="" />
-            </a>
-          </div>
+          {ProjectData.map((data) => {
+            return <ProjectCard {...data} key={data.title} />
+          })}
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
 
 :root {
   --default-bg: #fdf9ec;
@@ -15,6 +15,8 @@
     radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
   background-color: var(--header-bg);
   background-size: 16px 16px;
+  border-bottom: 4px ridge var(--gold);
+  box-shadow: 0 2px 8px 5px var(--header-bg);
 }
 
 .header:before {
@@ -35,17 +37,26 @@
 
 .header > h1 {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin-inline: auto;
   padding: 0.5rem 0 1.5rem;
   font-size: clamp(2rem, 5vw, 4rem);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Boldonse', sans-serif;
   text-align: center;
-  letter-spacing: 2px;
+  line-height: 1.75;
   background: linear-gradient(90deg, var(--default-bg), var(--gold));
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  border-bottom: 4px ridge var(--gold);
-  box-shadow: 0 2px 8px 5px var(--header-bg);
+}
+
+.header > h1 > .hero {
+  align-self: flex-start;
+}
+.header > h1 > .subtitle {
+  align-self: flex-end;
 }
 
 .wrapper {
