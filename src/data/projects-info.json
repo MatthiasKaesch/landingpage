@@ -1,5 +1,5 @@
-{
-  "1": {
+[
+  {
     "title": "Event Table",
     "link": "https://matthiaskaesch.github.io/event-table/",
     "thumbnail-image-url": "./assets/images/event-table.webp",
@@ -14,7 +14,7 @@
     ],
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis sapien nisi. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris erat velit, convallis et dolor ac, porttitor vulputate leo. Pellentesque non nunc feugiat, posuere dui vitae, sagittis elit. Vestibulum quis eleifend diam. Aenean pulvinar justo at dui dictum elementum. Nam a pulvinar dui. "
   },
-  "2": {
+  {
     "title": "Event Table",
     "link": "https://matthiaskaesch.github.io/event-table/",
     "thumbnail-image-url": "./assets/images/event-table.webp",
@@ -29,7 +29,7 @@
     ],
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis sapien nisi. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris erat velit, convallis et dolor ac, porttitor vulputate leo. Pellentesque non nunc feugiat, posuere dui vitae, sagittis elit. Vestibulum quis eleifend diam. Aenean pulvinar justo at dui dictum elementum. Nam a pulvinar dui. "
   },
-  "3": {
+  {
     "title": "Event Table",
     "link": "https://matthiaskaesch.github.io/event-table/",
     "thumbnail-image-url": "./assets/images/event-table.webp",
@@ -44,7 +44,7 @@
     ],
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis sapien nisi. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris erat velit, convallis et dolor ac, porttitor vulputate leo. Pellentesque non nunc feugiat, posuere dui vitae, sagittis elit. Vestibulum quis eleifend diam. Aenean pulvinar justo at dui dictum elementum. Nam a pulvinar dui. "
   },
-  "4": {
+  {
     "title": "Event Table",
     "link": "https://matthiaskaesch.github.io/event-table/",
     "thumbnail-image-url": "./assets/images/event-table.webp",
@@ -59,4 +59,4 @@
     ],
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis sapien nisi. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris erat velit, convallis et dolor ac, porttitor vulputate leo. Pellentesque non nunc feugiat, posuere dui vitae, sagittis elit. Vestibulum quis eleifend diam. Aenean pulvinar justo at dui dictum elementum. Nam a pulvinar dui. "
   }
-}
+]
