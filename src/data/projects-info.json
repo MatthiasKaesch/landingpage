@@ -2,7 +2,7 @@
   {
     "title": "Event Table",
     "projectUrl": "https://matthiaskaesch.github.io/event-table/",
-    "thumbnailUrl": "./assets/images/event-table.webp",
+    "thumbnail": "event-table.webp",
     "techStack": ["React", "SCSS", "Vite"],
     "colors": [
       "#88075d",
@@ -17,7 +17,7 @@
   {
     "title": "Event Table 2",
     "projectUrl": "https://matthiaskaesch.github.io/event-table/",
-    "thumbnailUrl": "./assets/images/event-table.webp",
+    "thumbnail": "event-table.webp",
     "techStack": ["React", "SCSS", "Vite"],
     "colors": [
       "#88075d",
@@ -32,7 +32,7 @@
   {
     "title": "Event Table 3",
     "projectUrl": "https://matthiaskaesch.github.io/event-table/",
-    "thumbnailUrl": "./assets/images/event-table.webp",
+    "thumbnail": "event-table.webp",
     "techStack": ["React", "SCSS", "Vite"],
     "colors": [
       "#88075d",
@@ -47,7 +47,7 @@
   {
     "title": "Event Table 4",
     "projectUrl": "https://matthiaskaesch.github.io/event-table/",
-    "thumbnailUrl": "./assets/images/event-table.webp",
+    "thumbnail": "event-table.webp",
     "techStack": ["React", "SCSS", "Vite"],
     "colors": [
       "#88075d",
