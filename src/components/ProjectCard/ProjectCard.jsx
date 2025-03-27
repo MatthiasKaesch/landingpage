@@ -1,7 +1,7 @@
 import React from 'react'
 import './ProjectCard.css'
 
-import ParallaxImage from '../ParallaxImage/ParallaxImage'
+import WarpImage from '../WarpImage/WarpImage'
 
 const ProjectCard = ({ title, projectUrl, thumbnail, techStack, colors }) => {
   console.clear()
@@ -9,7 +9,7 @@ const ProjectCard = ({ title, projectUrl, thumbnail, techStack, colors }) => {
     <div>
       <h2>{title}</h2>
       <div className="portal">
-        <ParallaxImage src={`/landingpage/assets/images/${thumbnail}`} alt="" />
+        <WarpImage src={`/landingpage/assets/images/${thumbnail}`} alt="" />
       </div>
     </div>
   )
