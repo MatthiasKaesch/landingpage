@@ -5,7 +5,7 @@ import ProjectData from './data/projects-info.json'
 
 function App() {
   return (
-    <>
+    <div>
       <header className="header">
         <h1 className="headline">
           <span className="hero">Matthias Käsch</span>
@@ -20,7 +20,7 @@ function App() {
           })}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

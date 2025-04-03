@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './WarpedBackground.css'
 
 const WarpedBackground = ({ src }) => {
-  console.log(src)
+  const [isHovered, setIsHovered] = useState(false)
+
   return (
     <div className="container">
       <svg className="warpSvg">
@@ -32,10 +33,14 @@ const WarpedBackground = ({ src }) => {
 
       <div
         className="image"
+        onMouseEnter={() => console.log('Hovered!')}
+        onMouseLeave={() => console.log('Left!')}
         style={{
           backgroundImage: `url(${src})`,
-          /* filter: 'url(#warpFilter)', */
+          /* filter: isHovered ? 'url(#warpFilter)' : 'none', */
         }}
+        /*   onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)} */
       ></div>
     </div>
   )
