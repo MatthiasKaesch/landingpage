@@ -2,22 +2,20 @@ import React, { useState } from 'react'
 import './WarpedBackground.css'
 
 const WarpedBackground = ({ src }) => {
-  const [isHovered, setIsHovered] = useState(false)
-
   return (
     <div className="container">
       <svg className="warpSvg">
         <filter id="warpFilter">
           <feTurbulence
             type="fractalNoise"
-            baseFrequency="0.03"
-            numOctaves="5"
+            baseFrequency="0.01"
+            numOctaves="2"
             result="waves"
           ></feTurbulence>
           <feColorMatrix in="waves" type="hueRotate">
             <animate
               attributeName="values"
-              values="0;360"
+              values="0;720"
               dur="2s"
               repeatCount="indefinite"
             ></animate>
@@ -25,7 +23,7 @@ const WarpedBackground = ({ src }) => {
           <feDisplacementMap
             xChannelSelector="R"
             yChannelSelector="G"
-            scale="10"
+            scale="15"
             in="SourceGraphic"
           ></feDisplacementMap>
         </filter>
@@ -33,14 +31,9 @@ const WarpedBackground = ({ src }) => {
 
       <div
         className="image"
-        onMouseEnter={() => console.log('Hovered!')}
-        onMouseLeave={() => console.log('Left!')}
         style={{
           backgroundImage: `url(${src})`,
-          /* filter: isHovered ? 'url(#warpFilter)' : 'none', */
         }}
-        /*   onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)} */
       ></div>
     </div>
   )
