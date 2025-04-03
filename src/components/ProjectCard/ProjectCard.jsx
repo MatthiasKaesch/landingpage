@@ -14,7 +14,9 @@ const ProjectCard = ({ title, projectUrl, thumbnail, techStack, colors }) => {
       }}
     >
       <h2>{title}</h2>
-      <WarpedBackground src={`/landingpage/assets/images/${thumbnail}`} />
+      <a href={projectUrl}>
+        <WarpedBackground src={`/landingpage/assets/images/${thumbnail}`} />
+      </a>
     </div>
   )
 }
