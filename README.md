@@ -11,9 +11,9 @@ Hosted on GitHub Pages
 
 # Features
 
-🟩 Minimalist & responsive design – Works seamlessly across all devices.
-🟩 Project previews – See my work at a glance.
-🟨 Optimized performance – Fast load times and smooth interactions.
+▶️🟩 Minimalist & responsive design – Works seamlessly across all devices.
+▶️🟩 Project previews – See my work at a glance.
+▶️🟨 Optimized performance – Fast load times and smooth interactions.
 
 # Installation & Setup
 
