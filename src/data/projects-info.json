@@ -8,27 +8,11 @@
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis sapien nisi. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris erat velit, convallis et dolor ac, porttitor vulputate leo. Pellentesque non nunc feugiat, posuere dui vitae, sagittis elit. Vestibulum quis eleifend diam. Aenean pulvinar justo at dui dictum elementum. Nam a pulvinar dui. "
   },
   {
-    "title": "Event Table 2",
-    "projectUrl": "https://matthiaskaesch.github.io/event-table/",
-    "thumbnail": "event-table.webp",
+    "title": "Hexagon Gallery",
+    "projectUrl": "https://matthiaskaesch.github.io/hexagon/",
+    "thumbnail": "hexagon.webp",
     "techStack": ["React", "SCSS", "Vite"],
-    "colors": ["#00e116", "#e1d900", "#0022e1", "#e10007", "#00e116"],
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis sapien nisi. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris erat velit, convallis et dolor ac, porttitor vulputate leo. Pellentesque non nunc feugiat, posuere dui vitae, sagittis elit. Vestibulum quis eleifend diam. Aenean pulvinar justo at dui dictum elementum. Nam a pulvinar dui. "
-  },
-  {
-    "title": "Event Table 3",
-    "projectUrl": "https://matthiaskaesch.github.io/event-table/",
-    "thumbnail": "event-table.webp",
-    "techStack": ["React", "SCSS", "Vite"],
-    "colors": ["#88075d", "#f310a9", "#56c2f4", "#0fa2e6", "#88075d"],
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis sapien nisi. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris erat velit, convallis et dolor ac, porttitor vulputate leo. Pellentesque non nunc feugiat, posuere dui vitae, sagittis elit. Vestibulum quis eleifend diam. Aenean pulvinar justo at dui dictum elementum. Nam a pulvinar dui. "
-  },
-  {
-    "title": "Event Table 4",
-    "projectUrl": "https://matthiaskaesch.github.io/event-table/",
-    "thumbnail": "event-table.webp",
-    "techStack": ["React", "SCSS", "Vite"],
-    "colors": ["#88075d", "#f310a9", "#56c2f4", "#0fa2e6", "#88075d"],
+    "colors": ["#ff3700", "#b4fd03", "#f1dc33", "#06dafb", "#ff3700"],
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis sapien nisi. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris erat velit, convallis et dolor ac, porttitor vulputate leo. Pellentesque non nunc feugiat, posuere dui vitae, sagittis elit. Vestibulum quis eleifend diam. Aenean pulvinar justo at dui dictum elementum. Nam a pulvinar dui. "
   }
 ]
