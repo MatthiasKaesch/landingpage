@@ -4,6 +4,7 @@ import WarpedBackground from '../WarpedBackground/WarpedBackground'
 const ProjectCard = ({ title, projectUrl, thumbnail, techStack, colors }) => {
   return (
     <div
+      className="portal"
       style={{
         '--thumbnail': `url(/landingpage/assets/images/${thumbnail})`,
         '--color1': colors[0],
@@ -14,7 +15,7 @@ const ProjectCard = ({ title, projectUrl, thumbnail, techStack, colors }) => {
       }}
     >
       <h2>{title}</h2>
-      <a href={projectUrl}>
+      <a href={projectUrl} target="_blank">
         <WarpedBackground src={`/landingpage/assets/images/${thumbnail}`} />
       </a>
     </div>
