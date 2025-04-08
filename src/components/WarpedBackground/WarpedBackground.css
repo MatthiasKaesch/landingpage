@@ -17,20 +17,23 @@
 .image {
   width: 400px;
   height: 400px;
-  background-size: cover;
   background-position: center;
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 50%;
   filter: saturate(0.1);
-  box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.4),
+    0 0 6px 3px rgb(255, 255, 255, 0.5);
   transition: box-shadow 0.2s ease-in-out;
+  background-size: 170%;
 }
 
 .image:hover {
   filter: url(#warpFilter);
-  box-shadow: inset 0 0 16px 16px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 0 16px 16px rgba(0, 0, 0, 0.75),
+    0 0 6px 3px rgb(255, 255, 255, 0.5);
+  animation: 1.5s grow linear infinite;
 }
 
 .container::after,
@@ -39,7 +42,14 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: conic-gradient(#b8b8b8, #696969, #b8b8b8, #696969, #b8b8b8);
+  background-image: conic-gradient(
+    from var(--angle),
+    #b8b8b8,
+    #504f4f,
+    #b8b8b8,
+    #504f4f,
+    #b8b8b8
+  );
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -47,14 +57,26 @@
   padding: 7px;
   box-sizing: content-box;
   border-radius: 50%;
-  transition: background-image 5s ease-in-out;
+  animation: 5s spin linear infinite;
+}
+
+.portal:nth-of-type(even) .container::after,
+.portal:nth-of-type(even) .container::before {
+  background-image: conic-gradient(
+    from var(--angle),
+    #504f4f,
+    #b8b8b8,
+    #504f4f,
+    #b8b8b8,
+    #504f4f
+  );
 }
 
 .container::after {
   filter: blur(0.5rem);
 }
 .container::before {
-  filter: blur(1.125rem);
+  filter: blur(0.9rem);
 }
 
 @property --angle {
@@ -82,5 +104,17 @@
   }
   to {
     --angle: 360deg;
+  }
+}
+
+@keyframes grow {
+  from {
+    background-size: 170%;
+  }
+  50% {
+    background-size: 180%;
+  }
+  to {
+    background-size: 170%;
   }
 }

@@ -5,7 +5,7 @@ import ProjectData from './data/projects-info.json'
 
 function App() {
   return (
-    <div>
+    <div className="layout">
       <header className="header">
         <h1 className="headline">
           <span className="hero">Matthias Käsch</span>
