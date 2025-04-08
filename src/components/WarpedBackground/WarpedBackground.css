@@ -48,14 +48,6 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: conic-gradient(
-    from var(--angle),
-    #b8b8b8,
-    #484848,
-    #b8b8b8,
-    #484848,
-    #b8b8b8
-  );
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -63,26 +55,58 @@
   padding: 7px;
   box-sizing: content-box;
   border-radius: 50%;
-  animation: 5s spin linear infinite;
-}
-
-.portal:nth-of-type(even) .container::after,
-.portal:nth-of-type(even) .container::before {
   background-image: conic-gradient(
     from var(--angle),
-    #484848,
-    #b8b8b8,
-    #484848,
-    #b8b8b8,
-    #484848
+    var(--color1, #ff4545),
+    var(--color2, #00ff99),
+    var(--color3, #006aff),
+    var(--color4, #ff0095),
+    var(--color5, #ff4545)
   );
+  animation: 1s spin linear infinite;
+}
+
+@media (min-width: 1200px) {
+  .portal .container::after,
+  .portal .container::before {
+    background-image: conic-gradient(
+      from var(--angle),
+      #b8b8b8,
+      #484848,
+      #b8b8b8,
+      #484848,
+      #b8b8b8
+    );
+    animation: 5s spin linear infinite;
+  }
+
+  .portal:nth-of-type(even) .container::after,
+  .portal:nth-of-type(even) .container::before {
+    background-image: conic-gradient(
+      from var(--angle),
+      #484848,
+      #b8b8b8,
+      #484848,
+      #b8b8b8,
+      #484848
+    );
+  }
 }
 
 .container::after {
-  filter: blur(0.5rem);
+  filter: blur(0.3rem);
 }
 .container::before {
-  filter: blur(0.9rem);
+  filter: blur(0.5rem);
+}
+
+@media (min-width: 1200px) {
+  .container::after {
+    filter: blur(0.5rem);
+  }
+  .container::before {
+    filter: blur(0.9rem);
+  }
 }
 
 @property --angle {
