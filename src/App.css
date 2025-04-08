@@ -39,11 +39,15 @@ main {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 5rem 3rem;
   justify-items: center;
   opacity: 0;
   animation: slideInTop 0.5s ease-in 0.25s forwards;
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @keyframes slideInTop {
