@@ -24,9 +24,10 @@
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 
-.header > h1 {
+.headline {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -37,16 +38,45 @@
   text-align: center;
   line-height: 0.85;
   background: linear-gradient(90deg, #fdf9ec, var(--gold));
-  color: transparent;
+  /*  color: transparent; */
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-.header > h1 > .hero {
+.hero,
+.subtitle {
+  opacity: 0;
+}
+
+.hero {
   align-self: flex-start;
   font-size: clamp(2rem, 5vw, 4rem);
+  animation: slideInLeft 0.5s ease-out 0.1s forwards;
 }
-.header > h1 > .subtitle {
+.subtitle {
   align-self: flex-end;
   font-size: clamp(1.5rem, 5vw, 3rem);
+  animation: slideInRight 0.5s ease-out 0.2s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

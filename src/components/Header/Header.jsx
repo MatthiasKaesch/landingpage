@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import SocialBar from '../SocialBar/SocialBar'
 
 const Header = () => {
   return (
@@ -8,6 +9,7 @@ const Header = () => {
         <span className="hero">Matthias Käsch</span>
         <span className="subtitle">Frontend Developer</span>
       </h1>
+      <SocialBar />
     </header>
   )
 }
