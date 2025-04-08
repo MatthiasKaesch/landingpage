@@ -1,10 +1,14 @@
+.social-bar-container {
+  width: 90%;
+  max-width: 1920px;
+  margin: 1rem auto 0;
+}
+
 .social-bar {
   display: flex;
   gap: 0 0.75rem;
   width: fit-content;
   padding: 0.25rem;
-
-  z-index: 2000;
 }
 
 a {
