@@ -36,8 +36,8 @@
   animation: 1.5s grow linear infinite;
 }
 
-.container::after,
-.container::before {
+.portal .container::after,
+.portal .container::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -85,8 +85,8 @@
   inherits: false;
 }
 
-.container:hover::after,
-.container:hover::before {
+.portal .container:hover::after,
+.portal .container:hover::before {
   background-image: conic-gradient(
     from var(--angle),
     var(--color1, #ff4545),

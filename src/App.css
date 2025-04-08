@@ -20,59 +20,6 @@ main {
   height: 100dvh;
 }
 
-.header {
-  position: relative;
-  background: radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
-  background-color: var(--default-bg);
-  background-size: 16px 16px;
-  border-bottom: 4px ridge var(--gold);
-  box-shadow: 0 2px 8px 5px var(--default-bg);
-}
-
-.header:before {
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.2),
-    var(--gold-overlay) 20%,
-    var(--gold-overlay) 80%,
-    rgba(0, 0, 0, 0.2)
-  );
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.header > h1 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  max-width: 1280px;
-  margin-inline: auto;
-  padding: 2.5rem 0 2.5rem;
-  font-family: 'Boldonse', sans-serif;
-  text-align: center;
-  line-height: 0.85;
-  background: linear-gradient(90deg, #fdf9ec, var(--gold));
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.header > h1 > .hero {
-  align-self: flex-start;
-  font-size: clamp(2rem, 5vw, 4rem);
-}
-.header > h1 > .subtitle {
-  align-self: flex-end;
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-
 .wrapper {
   position: relative;
   width: 90%;

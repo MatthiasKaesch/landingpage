@@ -1,18 +1,13 @@
 import './App.css'
 import './styling/normalize.css'
+import Header from './components/Header/Header'
 import ProjectCard from './components/ProjectCard/ProjectCard'
 import ProjectData from './data/projects-info.json'
 
 function App() {
   return (
     <div className="layout">
-      <header className="header">
-        <h1 className="headline">
-          <span className="hero">Matthias Käsch</span>
-          <span className="subtitle">Frontend Developer</span>
-        </h1>
-      </header>
-
+      <Header />
       <div className="wrapper">
         <div className="projects-grid">
           {ProjectData.map((data) => {
