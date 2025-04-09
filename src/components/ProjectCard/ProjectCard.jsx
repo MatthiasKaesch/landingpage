@@ -1,8 +1,17 @@
 import React from 'react'
 import './ProjectCard.css'
 import WarpedBackground from '../WarpedBackground/WarpedBackground'
+import InfoIcon from '../Icons/InfoIcon'
+import GitHubIcon from '../Icons/GitHubIcon'
 
-const ProjectCard = ({ title, projectUrl, thumbnail, techStack, colors }) => {
+const ProjectCard = ({
+  title,
+  projectUrl,
+  projectRepo,
+  thumbnail,
+  techStack,
+  colors,
+}) => {
   return (
     <div
       className="portal"
@@ -15,7 +24,10 @@ const ProjectCard = ({ title, projectUrl, thumbnail, techStack, colors }) => {
         '--color5': colors[0],
       }}
     >
-      <h2 className="portal-title">{title}</h2>
+      <h2 className="portal-title" style={{ color: colors[1] }}>
+        {title}
+      </h2>
+
       <a
         className="portal-link"
         href={projectUrl}
@@ -23,6 +35,19 @@ const ProjectCard = ({ title, projectUrl, thumbnail, techStack, colors }) => {
         rel="noopener noreferrer"
       >
         <WarpedBackground src={`/landingpage/assets/images/${thumbnail}`} />
+      </a>
+
+      <button className="portal-info">
+        <InfoIcon style={{ color: colors[1] }} />
+      </button>
+
+      <a
+        className="portal-repo"
+        href={projectRepo}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <GitHubIcon style={{ fill: colors[1] }} />
       </a>
     </div>
   )

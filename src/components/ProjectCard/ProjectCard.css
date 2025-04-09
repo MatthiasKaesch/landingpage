@@ -1,5 +1,9 @@
 .portal {
   width: fit-content;
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  grid-template-rows: 48px auto;
+  padding: 0.5rem;
   opacity: 0;
   animation: slideInLeft 0.5s ease-out 0.4s forwards;
 }
@@ -9,15 +13,43 @@
 }
 
 .portal-title {
+  grid-column: 2;
   font-family: 'Boldonse', sans-serif;
   text-align: center;
   font-size: 1.25rem;
-  color: var(--gold);
+  line-height: 1.5;
 }
 
 .portal-link {
   display: block;
-  margin-top: 2rem;
+  margin-top: 0.75rem;
+  grid-column: 2;
+}
+
+.portal-info {
+  grid-row: 2;
+  padding: 0;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transform: translate(1.5rem, -1rem);
+}
+
+.portal-info svg {
+  width: 48px;
+  height: 48px;
+}
+
+.portal-repo {
+  grid-row: 2;
+  grid-column: 3;
+  transform: translate(-1.5rem, -1rem);
+}
+
+.portal-repo svg {
+  width: 48px;
+  height: 48px;
 }
 
 @keyframes slideInLeft {
