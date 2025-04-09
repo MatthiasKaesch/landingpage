@@ -1,11 +1,12 @@
 import React, { useRef } from 'react'
+import ReactDOM from 'react-dom'
 import { useFocusRestore } from '../../hooks/useFocusRestore'
 import { useFocusTrap } from '../../hooks/useFocusTrap'
 import { useEscapeKey } from '../../hooks/useEscapeKey'
 import { useLockBodyScroll } from '../../hooks/useLockBodyScroll'
 import './InfoModal.css'
 
-const InfoModal = ({ isOpen, onClose, title, techStack, desc }) => {
+const InfoModal = ({ isOpen, onClose, title, techStack, desc, colors }) => {
   const dialogRef = useRef()
   useFocusTrap(dialogRef, isOpen)
   useFocusRestore(isOpen)
@@ -14,8 +15,14 @@ const InfoModal = ({ isOpen, onClose, title, techStack, desc }) => {
 
   if (!isOpen) return null
 
-  return (
-    <div className="modal-backdrop">
+  return ReactDOM.createPortal(
+    <div
+      className="modal-backdrop"
+      style={{
+        '--portalColor1': colors[0],
+        '--portalColor2': colors[1],
+      }}
+    >
       <div
         className="modal"
         role="dialog"
@@ -25,7 +32,7 @@ const InfoModal = ({ isOpen, onClose, title, techStack, desc }) => {
         ref={dialogRef}
       >
         <div className="modal-header">
-          <h3 id="modal-title">{title}</h3>
+          <h3 className="modal-title">{title}</h3>
           <button onClick={onClose}>Close</button>
         </div>
         <ul>
@@ -35,7 +42,8 @@ const InfoModal = ({ isOpen, onClose, title, techStack, desc }) => {
         </ul>
         <p>{desc}</p>
       </div>
-    </div>
+    </div>,
+    document.getElementById('modal-root'),
   )
 }
 

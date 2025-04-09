@@ -45,6 +45,7 @@ const ProjectCard = ({
         title={`${title} - Info`}
         techStack={techStack}
         desc={desc}
+        colors={[colors[0], colors[2]]}
       />
 
       <h2 className="portal-title">{title}</h2>
