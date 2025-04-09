@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
+import './InfoModal.css'
 
-const InfoModal = ({ isOpen, onClose, title, children }) => {
+const InfoModal = ({ isOpen, onClose, title, techStack, desc }) => {
   const dialogRef = useRef()
 
   useEffect(() => {
@@ -38,6 +39,13 @@ const InfoModal = ({ isOpen, onClose, title, children }) => {
     }
   }
 
+  useEffect(() => {
+    const lastFocused = document.activeElement
+    return () => {
+      lastFocused?.focus()
+    }
+  }, [])
+
   if (!isOpen) return null
 
   return (
@@ -52,7 +60,7 @@ const InfoModal = ({ isOpen, onClose, title, children }) => {
         onKeyDown={handleTab}
       >
         <h3 id="modal-title">{title}</h3>
-        {children}
+
         <button onClick={onClose}>Close</button>
       </div>
     </div>

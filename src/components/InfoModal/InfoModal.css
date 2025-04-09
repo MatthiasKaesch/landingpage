@@ -1,0 +1,73 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.2)
+  );
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+  animation: fadeInBackdrop 0.3s ease-out;
+}
+
+.modal {
+  background: rgba(0, 0, 0);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  width: 90%;
+  outline: none;
+  box-shadow: 0 0 25px 10px rgba(0, 255, 255, 0.2);
+  animation: portalOpen 0.4s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal::before {
+  content: '';
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(
+    from 0deg,
+    var(--color2),
+    var(--color3),
+    var(--color2)
+  );
+  z-index: -1;
+  animation: spin 2s linear infinite;
+  filter: blur(2rem);
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+@keyframes fadeInBackdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes portalOpen {
+  from {
+    transform: scale(0.75);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

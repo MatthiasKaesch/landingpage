@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import './ProjectCard.css'
 import WarpedBackground from '../WarpedBackground/WarpedBackground'
 import InfoIcon from '../Icons/InfoIcon'
 import GitHubIcon from '../Icons/GitHubIcon'
+import InfoModal from '../InfoModal/InfoModal'
 
 const ProjectCard = ({
   title,
@@ -12,6 +13,19 @@ const ProjectCard = ({
   techStack,
   colors,
 }) => {
+  const [isOpen, setIsOpen] = useState(false)
+  const triggerRef = useRef(null)
+
+  const openModal = () => {
+    triggerRef.current = document.activeElement
+    setIsOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsOpen(false)
+    triggerRef.current?.focus()
+  }
+
   return (
     <div
       className="portal"
@@ -24,6 +38,12 @@ const ProjectCard = ({
         '--color5': colors[0],
       }}
     >
+      <InfoModal
+        isOpen={isOpen}
+        onClose={closeModal}
+        title={`${title} - Info`}
+      />
+
       <h2 className="portal-title">{title}</h2>
 
       <a
@@ -35,7 +55,12 @@ const ProjectCard = ({
         <WarpedBackground src={`/landingpage/assets/images/${thumbnail}`} />
       </a>
 
-      <button className="portal-info">
+      <button
+        className="portal-info"
+        onClick={openModal}
+        aria-haspopup="dialog"
+        aria-expanded={isOpen}
+      >
         <InfoIcon />
       </button>
 
