@@ -52,6 +52,17 @@
   height: 48px;
 }
 
+.portal-info svg,
+.portal-repo svg {
+  transition: transform 0.3s ease-in-out, brightness 0.3s ease-in-out;
+}
+
+.portal-info svg:hover,
+.portal-repo svg:hover {
+  transform: scale(1.25);
+  filter: brightness(1.75);
+}
+
 @keyframes slideInLeft {
   from {
     opacity: 0;
