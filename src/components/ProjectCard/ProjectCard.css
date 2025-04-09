@@ -1,5 +1,11 @@
 .portal {
   width: fit-content;
+  opacity: 0;
+  animation: slideInLeft 0.5s ease-out 0.4s forwards;
+}
+
+.portal:nth-of-type(2) {
+  animation: slideInRight 0.5s ease-out 0.4s forwards;
 }
 
 .portal-title {
@@ -12,4 +18,25 @@
 .portal-link {
   display: block;
   margin-top: 2rem;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

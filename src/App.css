@@ -42,15 +42,15 @@ main {
   grid-template-columns: 1fr;
   gap: 5rem 3rem;
   justify-items: center;
-  opacity: 0;
-  animation: slideInTop 0.5s ease-in 0.25s forwards;
+  /* opacity: 0; */
+  /*  animation: slideInTop 0.5s ease-in 0.25s forwards; */
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@keyframes slideInTop {
+/* @keyframes slideInTop {
   from {
     opacity: 0;
     transform: translateY(-5rem);
@@ -63,3 +63,4 @@ main {
     transform: translateX(0);
   }
 }
+ */
