@@ -1,46 +1,31 @@
 .modal-backdrop {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   inset: 0;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.2)
-  );
-  display: grid;
-  place-items: center;
-  z-index: 9999;
-  animation: fadeInBackdrop 0.3s ease-out;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
 }
 
 .modal {
-  background: rgba(0, 0, 0);
-  color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  max-width: 500px;
-  width: 90%;
-  outline: none;
-  box-shadow: 0 0 25px 10px rgba(0, 255, 255, 0.2);
-  animation: portalOpen 0.4s ease-out;
   position: relative;
   overflow: hidden;
+  width: 90%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 1rem;
+  outline: none;
+  font-family: Boldonse;
+  color: var(--portalColor2);
+  filter: brightness(1.5);
+  background: rgb(10, 10, 10);
+  box-shadow: 0 0 15px 5px rgba(248, 221, 131, 0.4);
+  animation: portalOpen 0.4s ease-out;
 }
 
-.modal::before {
-  content: '';
-  position: absolute;
-  inset: -50%;
-  background: conic-gradient(
-    from 0deg,
-    var(--color2),
-    var(--color3),
-    var(--color2)
-  );
-  z-index: -1;
-  animation: spin 2s linear infinite;
-  filter: blur(2rem);
-  opacity: 0.2;
-  border-radius: 50%;
+.modal-title {
+  color: var(--portalColor1);
 }
 
 @keyframes fadeInBackdrop {
@@ -60,14 +45,5 @@
   to {
     transform: scale(1);
     opacity: 1;
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
