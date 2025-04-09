@@ -13,7 +13,7 @@
       "Accessibility (a11y)"
     ],
     "colors": ["#88075d", "#f310a9", "#56c2f4", "#0fa2e6", "#88075d"],
-    "desc": "A responsive event agenda featuring dynamic time slot rendering, modular SVG icon support, and full dark/light theme toggling based on system preferences and user interaction. Special care was given to mobile UX: instead of keeping the table header sticky, a custom solution displays time slot information contextually during scroll, improving orientation without forcing the user to scroll back up."
+    "desc": "A responsive event agenda featuring dynamic time slot rendering, modular SVG icon support, and full dark/light theme toggling based on system preferences and user interaction.</br></br> Special care was given to mobile UX:</br> Instead of keeping the table header sticky, a custom solution displays time slot information contextually during scroll, improving orientation without forcing the user to scroll back up."
   },
   {
     "title": "Hexagon Gallery",

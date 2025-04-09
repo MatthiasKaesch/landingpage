@@ -33,14 +33,23 @@ const InfoModal = ({ isOpen, onClose, title, techStack, desc, colors }) => {
       >
         <div className="modal-header">
           <h3 className="modal-title">{title}</h3>
-          <button onClick={onClose}>Close</button>
+          <button className="modal-close-button" onClick={onClose}>
+            X
+          </button>
         </div>
-        <ul>
-          {techStack.map((tech) => {
-            return <li key={tech}>{tech}</li>
-          })}
-        </ul>
-        <p>{desc}</p>
+
+        <section>
+          <h3 className="modal-section-title">Tech Stack & Features</h3>
+          <ul className="modal-tech-stack">
+            {techStack.map((tech) => {
+              return <li key={tech}>{tech}</li>
+            })}
+          </ul>
+        </section>
+        <section>
+          <h3 className="modal-section-title">Description</h3>
+          <p dangerouslySetInnerHTML={{ __html: desc }} />
+        </section>
       </div>
     </div>,
     document.getElementById('modal-root'),
