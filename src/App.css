@@ -22,12 +22,19 @@ main {
 
 .wrapper {
   position: relative;
-  width: 90%;
-  max-width: 1920px;
-  margin: 1rem auto 0;
-  padding: 3rem 3rem;
+  width: 100%;
+  padding: 3rem 1rem;
   background-color: var(--default-bg);
   box-shadow: 0px 0 15px 1px rgba(0, 0, 0, 0.21);
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 90%;
+    max-width: 1680px;
+    margin: 1rem auto 0;
+    padding: 3rem 3rem;
+  }
 }
 
 .wrapper::before {
