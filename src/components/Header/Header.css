@@ -61,6 +61,7 @@
   font-size: clamp(1.75rem, 5vw, 3.5rem);
   animation: slideInLeft 0.5s ease-out 0.1s forwards;
 }
+
 .subtitle {
   align-self: flex-end;
   font-size: clamp(1.25rem, 5vw, 2.5rem);
