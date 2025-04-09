@@ -1,6 +1,6 @@
 .social-bar-container {
   width: 90%;
-  max-width: 1920px;
+  max-width: 1680px;
   margin: 0.5rem auto 0;
 }
 
@@ -28,7 +28,7 @@ a {
   transition: transform 0.3s ease, fill 0.3s ease;
   cursor: pointer;
   transform: rotate3d(1, 1, 0, 90deg);
-  animation: rotateToView 0.5s 1s ease-out forwards;
+  animation: rotateToView 0.5s 1.25s ease-out forwards;
 }
 
 @media (min-width: 768px) {
