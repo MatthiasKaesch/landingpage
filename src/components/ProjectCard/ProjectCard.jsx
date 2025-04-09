@@ -24,9 +24,7 @@ const ProjectCard = ({
         '--color5': colors[0],
       }}
     >
-      <h2 className="portal-title" style={{ color: colors[1] }}>
-        {title}
-      </h2>
+      <h2 className="portal-title">{title}</h2>
 
       <a
         className="portal-link"
@@ -38,7 +36,7 @@ const ProjectCard = ({
       </a>
 
       <button className="portal-info">
-        <InfoIcon style={{ color: colors[1] }} />
+        <InfoIcon /* style={{ color: colors[1] }} */ />
       </button>
 
       <a
@@ -47,7 +45,7 @@ const ProjectCard = ({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <GitHubIcon style={{ fill: colors[1] }} />
+        <GitHubIcon /* style={{ color: colors[1] }} */ />
       </a>
     </div>
   )
