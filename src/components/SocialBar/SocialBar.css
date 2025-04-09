@@ -21,7 +21,7 @@ a {
   cursor: pointer;
 }
 
-svg {
+.social-icon {
   fill: var(--gold);
   width: 24px;
   height: 24px;
@@ -32,13 +32,13 @@ svg {
 }
 
 @media (min-width: 768px) {
-  svg {
+  .social-icon {
     width: 32px;
     height: 32px;
   }
 }
 
-svg:hover {
+.social-icon:hover {
   transform: scale(1.1);
   fill: var(--color-accent, #f7d976);
 }

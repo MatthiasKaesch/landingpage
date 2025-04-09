@@ -13,17 +13,17 @@ const SocialBar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GitHubIcon />
+          <GitHubIcon className="social-icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/matthias-kaesch/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LinkedInIcon />
+          <LinkedInIcon className="social-icon" />
         </a>
         <a href="mailto:matthias.kaesch@gmail.com">
-          <MailIcon />
+          <MailIcon className="social-icon" />
         </a>
       </div>
     </div>
