@@ -4,6 +4,12 @@
   aspect-ratio: 1/1;
 }
 
+@media (min-width: 1300px) {
+  .portal {
+    max-width: 650px;
+  }
+}
+
 .container {
   width: 100%;
   aspect-ratio: 1/1;
@@ -12,34 +18,6 @@
   isolation: isolate;
   clip-path: circle(60% at 50% 50%);
   transition: background-image 3s ease-in-out;
-}
-
-.warpSvg {
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  filter: saturate(0.1);
-  box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.4),
-    0 0 6px 3px rgb(255, 255, 255, 0.5);
-  transition: box-shadow 0.2s ease-in-out;
-  background-size: 170%;
-}
-
-.image:hover {
-  filter: url(#warpFilter);
-  box-shadow: inset 0 0 16px 16px rgba(0, 0, 0, 0.75),
-    0 0 6px 3px rgb(255, 255, 255, 0.5);
-  animation: 1.5s grow linear infinite;
 }
 
 .portal .container::after,
@@ -126,6 +104,34 @@
     var(--color5, #ff4545)
   );
   animation: 1s spin linear infinite;
+}
+
+.warpSvg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  filter: saturate(0.1);
+  box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.4),
+    0 0 6px 3px rgb(255, 255, 255, 0.5);
+  transition: box-shadow 0.2s ease-in-out;
+  background-size: 170%;
+}
+
+.image:hover {
+  filter: url(#warpFilter);
+  box-shadow: inset 0 0 16px 16px rgba(0, 0, 0, 0.75),
+    0 0 6px 3px rgb(255, 255, 255, 0.5);
+  animation: 1.5s grow linear infinite;
 }
 
 @keyframes spin {
