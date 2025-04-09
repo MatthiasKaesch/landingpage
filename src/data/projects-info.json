@@ -2,6 +2,7 @@
   {
     "title": "Event Table",
     "projectUrl": "https://matthiaskaesch.github.io/event-table/",
+    "projectRepo": "https://github.com/MatthiasKaesch/event-table",
     "thumbnail": "event-table.webp",
     "techStack": ["React", "SCSS", "Vite"],
     "colors": ["#88075d", "#f310a9", "#56c2f4", "#0fa2e6", "#88075d"],
@@ -10,6 +11,7 @@
   {
     "title": "Hexagon Gallery",
     "projectUrl": "https://matthiaskaesch.github.io/hexagon/",
+    "projectRepo": "https://github.com/MatthiasKaesch/hexagon",
     "thumbnail": "hexagon.webp",
     "techStack": ["React", "SCSS", "Vite"],
     "colors": ["#ff3700", "#b4fd03", "#f1dc33", "#06dafb", "#ff3700"],
