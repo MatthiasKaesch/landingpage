@@ -25,3 +25,5 @@ dist-ssr
 
 # Image source files
 *.png
+*.jpg
+*.psd
