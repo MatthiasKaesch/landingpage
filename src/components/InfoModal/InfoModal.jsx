@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import { useFocusRestore } from '../../hooks/useFocusRestore'
 import { useFocusTrap } from '../../hooks/useFocusTrap'
 import { useEscapeKey } from '../../hooks/useEscapeKey'
+import { useLockBodyScroll } from '../../hooks/useLockBodyScroll'
 import './InfoModal.css'
 
 const InfoModal = ({ isOpen, onClose, title, techStack, desc }) => {
@@ -9,6 +10,7 @@ const InfoModal = ({ isOpen, onClose, title, techStack, desc }) => {
   useFocusTrap(dialogRef, isOpen)
   useFocusRestore(isOpen)
   useEscapeKey(onClose, isOpen)
+  useLockBodyScroll(isOpen)
 
   if (!isOpen) return null
 
