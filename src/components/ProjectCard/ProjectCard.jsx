@@ -11,6 +11,7 @@ const ProjectCard = ({
   projectRepo,
   thumbnail,
   techStack,
+  desc,
   colors,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -42,6 +43,8 @@ const ProjectCard = ({
         isOpen={isOpen}
         onClose={closeModal}
         title={`${title} - Info`}
+        techStack={techStack}
+        desc={desc}
       />
 
       <h2 className="portal-title">{title}</h2>

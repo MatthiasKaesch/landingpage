@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react'
+import { useFocusRestore } from '../../hooks/useFocusRestore'
 import './InfoModal.css'
 
 const InfoModal = ({ isOpen, onClose, title, techStack, desc }) => {
   const dialogRef = useRef()
+  useFocusRestore(isOpen)
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -59,9 +61,16 @@ const InfoModal = ({ isOpen, onClose, title, techStack, desc }) => {
         ref={dialogRef}
         onKeyDown={handleTab}
       >
-        <h3 id="modal-title">{title}</h3>
-
-        <button onClick={onClose}>Close</button>
+        <div className="modal-header">
+          <h3 id="modal-title">{title}</h3>
+          <button onClick={onClose}>Close</button>
+        </div>
+        <ul>
+          {techStack.map((tech) => {
+            return <li key={tech}>{tech}</li>
+          })}
+        </ul>
+        <p>{desc}</p>
       </div>
     </div>
   )
