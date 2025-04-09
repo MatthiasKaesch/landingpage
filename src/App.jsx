@@ -2,7 +2,7 @@ import './App.css'
 import './styling/normalize.css'
 import Header from './components/Header/Header'
 import ProjectCard from './components/ProjectCard/ProjectCard'
-import ProjectData from './data/projects-info.json'
+import ProjectData from '../public/data/projects-info.json'
 
 function App() {
   return (
