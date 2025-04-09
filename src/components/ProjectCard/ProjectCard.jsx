@@ -36,7 +36,7 @@ const ProjectCard = ({
       </a>
 
       <button className="portal-info">
-        <InfoIcon /* style={{ color: colors[1] }} */ />
+        <InfoIcon />
       </button>
 
       <a
@@ -45,7 +45,7 @@ const ProjectCard = ({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <GitHubIcon /* style={{ color: colors[1] }} */ />
+        <GitHubIcon />
       </a>
     </div>
   )
