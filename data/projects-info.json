@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Event Table",
+    "projectUrl": "https://matthiaskaesch.github.io/event-table/",
+    "projectRepo": "https://github.com/MatthiasKaesch/event-table",
+    "thumbnail": "event-table.webp",
+    "techStack": [
+      "React",
+      "SCSS",
+      "CSS Variables",
+      "Vite",
+      "Dark/Light Theme (with prefers-color-scheme + toggle)",
+      "Accessibility (a11y)"
+    ],
+    "colors": ["#88075d", "#f310a9", "#56c2f4", "#0fa2e6", "#88075d"],
+    "desc": "A responsive event agenda featuring dynamic time slot rendering, modular SVG icon support, and full dark/light theme toggling based on system preferences and user interaction.</br></br> Special care was given to mobile UX:</br> Instead of keeping the table header sticky, a custom solution displays time slot information contextually during scroll, improving orientation without forcing the user to scroll back up."
+  },
+  {
+    "title": "Hexagon Gallery",
+    "projectUrl": "https://matthiaskaesch.github.io/hexagon/",
+    "projectRepo": "https://github.com/MatthiasKaesch/hexagon",
+    "thumbnail": "hexagon.webp",
+    "techStack": ["React", "SCSS", "Vite"],
+    "colors": ["#ff3700", "#b4fd03", "#f1dc33", "#06dafb", "#ff3700"],
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis sapien nisi. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris erat velit, convallis et dolor ac, porttitor vulputate leo. Pellentesque non nunc feugiat, posuere dui vitae, sagittis elit. Vestibulum quis eleifend diam. Aenean pulvinar justo at dui dictum elementum. Nam a pulvinar dui. "
+  }
+]
