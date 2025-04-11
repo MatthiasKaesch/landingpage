@@ -13,15 +13,21 @@
       "Accessibility (a11y)"
     ],
     "colors": ["#88075d", "#f310a9", "#56c2f4", "#0fa2e6", "#88075d"],
-    "desc": "A responsive event agenda featuring dynamic time slot rendering, modular SVG icon support, and full dark/light theme toggling based on system preferences and user interaction.</br></br> Special care was given to mobile UX:</br> Instead of keeping the table header sticky, a custom solution displays time slot information contextually during scroll, improving orientation without forcing the user to scroll back up."
+    "desc": "A responsive event agenda featuring dynamic time slot rendering, modular SVG icon support, and full dark/light theme toggling based on system preferences and user interaction.</br></br> Special care was given to UI:</br> Instead of keeping the table and time column header sticky, a custom solution displays time slot and room information contextually during scroll, improving orientation without forcing the user to scroll back up."
   },
   {
     "title": "Hexagon Gallery",
     "projectUrl": "https://matthiaskaesch.github.io/hexagon/",
     "projectRepo": "https://github.com/MatthiasKaesch/hexagon",
     "thumbnail": "hexagon.webp",
-    "techStack": ["React", "SCSS", "Vite"],
+    "techStack": [
+      "HTML",
+      "SCSS",
+      "Vanilla JS",
+      "Dynamic Layout Calculation",
+      "Custom clip-path generation"
+    ],
     "colors": ["#ff3700", "#b4fd03", "#f1dc33", "#06dafb", "#ff3700"],
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis sapien nisi. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris erat velit, convallis et dolor ac, porttitor vulputate leo. Pellentesque non nunc feugiat, posuere dui vitae, sagittis elit. Vestibulum quis eleifend diam. Aenean pulvinar justo at dui dictum elementum. Nam a pulvinar dui. "
+    "desc": "This project demonstrates advanced use of CSS transforms, JavaScript-based layout calculations, and responsive design principles with visual flair.</br>It features an interactive hexagon grid layout that is dynamically generated. The number and position of the hexagons automatically adapt to the available viewport width. The outer edges of the hexagon field are precisely clipped using dynamically calculated <code>clip-path</code> values.</br>Each tile features an animated 3D entrance effect on page load. The animation is randomized using <code>rotate3d</code> values along two axes, giving each tile a unique motion as it transitions into view. All layout parameters, such as tile size, spacing, and border thickness, are customizable in real time.</br></br><span class='criticalInfo'>Note: This project is heavy work-in-progress.</br>It currently lacks mobile support and has not been optimized for smaller screen sizes.</span>"
   }
 ]
