@@ -74,6 +74,14 @@
   line-height: 2;
 }
 
+.modal code {
+  color: var(--portalColor2);
+}
+
+.criticalInfo {
+  text-transform: uppercase;
+}
+
 @keyframes fadeInBackdrop {
   from {
     opacity: 0;

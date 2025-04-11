@@ -18,6 +18,7 @@ const InfoModal = ({ isOpen, onClose, title, techStack, desc, colors }) => {
   return ReactDOM.createPortal(
     <div
       className="modal-backdrop"
+      onClick={onClose}
       style={{
         '--portalColor1': colors[0],
         '--portalColor2': colors[1],
@@ -25,6 +26,7 @@ const InfoModal = ({ isOpen, onClose, title, techStack, desc, colors }) => {
     >
       <div
         className="modal"
+        onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-title"
