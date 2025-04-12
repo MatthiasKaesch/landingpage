@@ -45,8 +45,16 @@
 .portal-title,
 .portal-info,
 .portal-repo {
-  color: grey;
-  transition: color 0.3s ease-in-out;
+  color: var(--color2);
+}
+
+@media (min-width: 1440px) {
+  .portal-title,
+  .portal-info,
+  .portal-repo {
+    color: grey;
+    transition: color 0.3s ease-in-out;
+  }
 }
 
 .portal:hover .portal-title,
