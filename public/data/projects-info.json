@@ -44,6 +44,6 @@
       "Custom Select Menu"
     ],
     "colors": ["#ff5905", "#e00000", "#f6f6f6", "#f6f6f6", "#ff5905"],
-    "desc": "This project demonstrates advanced use of CSS transforms, JavaScript-based layout calculations, and responsive design principles with visual flair.</br>It features an interactive hexagon grid layout that is dynamically generated. The number and position of the hexagons automatically adapt to the available viewport width. The outer edges of the hexagon field are precisely clipped using dynamically calculated <code>clip-path</code> values.</br>Each tile features an animated 3D entrance effect on page load. The animation is randomized using <code>rotate3d</code> values along two axes, giving each tile a unique motion as it transitions into view. All layout parameters, such as tile size, spacing, and border thickness, are customizable in real time.</br></br><span class='criticalInfo'>Note: This project is heavy work-in-progress.</br>It currently lacks mobile support and has not been optimized for smaller screen sizes.</span>"
+    "desc": "This accessible registration form showcases custom form validation, semantic markup, and an a11y-friendly custom select menu — all built with vanilla HTML, CSS, and JavaScript. It demonstrates how to create inclusive, keyboard-navigable forms without relying on frameworks, while keeping full control over interactions and accessibility."
   }
 ]
