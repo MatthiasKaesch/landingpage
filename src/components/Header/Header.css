@@ -8,6 +8,7 @@
   background-size: 16px 16px;
   border-bottom: 4px ridge var(--gold);
   box-shadow: 0 2px 8px 5px var(--default-bg);
+  z-index: 1000;
 }
 
 .header:before {
