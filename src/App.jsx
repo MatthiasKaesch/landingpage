@@ -1,7 +1,7 @@
 import './App.css'
 import './styling/normalize.css'
 import Header from './components/Header/Header'
-import ProjectCard from './components/ProjectCard/ProjectCard'
+import Portal from './components/Portal/Portal'
 import ProjectData from '../public/data/projects-info.json'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <div className="wrapper">
         <div className="projects-grid">
           {ProjectData.map((data) => {
-            return <ProjectCard {...data} key={data.title} />
+            return <Portal {...data} key={data.title} />
           })}
         </div>
       </div>

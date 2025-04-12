@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import './ProjectCard.css'
+import './Portal.css'
 import WarpedBackground from '../WarpedBackground/WarpedBackground'
 import InfoIcon from '../Icons/InfoIcon'
 import GitHubIcon from '../Icons/GitHubIcon'
