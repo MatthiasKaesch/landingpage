@@ -9,6 +9,7 @@
   gap: 0 0.75rem;
   width: fit-content;
   padding: 0.25rem;
+  perspective: 100px;
 }
 
 a {
@@ -22,7 +23,8 @@ a {
   transition: transform 0.3s ease, fill 0.3s ease;
   cursor: pointer;
   transform: rotate3d(1, 1, 0, 90deg);
-  animation: rotateToView 0.5s 1.25s ease-out forwards;
+  transform-style: preserve-3d;
+  animation: rotateToView 1s 1.25s ease-out forwards;
 }
 
 @media (min-width: 768px) {
@@ -41,7 +43,13 @@ a {
   from {
     transform: rotate3d(1, 1, 0, 90deg);
   }
+  50% {
+    transform: rotate3d(1, 1, 0, 45deg);
+  }
+  60% {
+    transform: scale(1.2);
+  }
   to {
-    transform: rotate3d(1, 1, 0, 0deg);
+    transform: scale(1);
   }
 }
