@@ -29,5 +29,21 @@
     ],
     "colors": ["#ff3700", "#b4fd03", "#f1dc33", "#06dafb", "#ff3700"],
     "desc": "This project demonstrates advanced use of CSS transforms, JavaScript-based layout calculations, and responsive design principles with visual flair.</br>It features an interactive hexagon grid layout that is dynamically generated. The number and position of the hexagons automatically adapt to the available viewport width. The outer edges of the hexagon field are precisely clipped using dynamically calculated <code>clip-path</code> values.</br>Each tile features an animated 3D entrance effect on page load. The animation is randomized using <code>rotate3d</code> values along two axes, giving each tile a unique motion as it transitions into view. All layout parameters, such as tile size, spacing, and border thickness, are customizable in real time.</br></br><span class='criticalInfo'>Note: This project is heavy work-in-progress.</br>It currently lacks mobile support and has not been optimized for smaller screen sizes.</span>"
+  },
+  {
+    "title": "Accesable Form",
+    "projectUrl": "https://matthiaskaesch.github.io/a11y-form/",
+    "projectRepo": "https://github.com/MatthiasKaesch/a11y-form",
+    "thumbnail": "hexagon.webp",
+    "techStack": [
+      "HTML",
+      "CSS",
+      "Vanilla JS",
+      "ally",
+      "Form Validation",
+      "Custom Select Menu"
+    ],
+    "colors": ["#ff5905", "#e00000", "#f6f6f6", "#f6f6f6", "#ff5905"],
+    "desc": "This project demonstrates advanced use of CSS transforms, JavaScript-based layout calculations, and responsive design principles with visual flair.</br>It features an interactive hexagon grid layout that is dynamically generated. The number and position of the hexagons automatically adapt to the available viewport width. The outer edges of the hexagon field are precisely clipped using dynamically calculated <code>clip-path</code> values.</br>Each tile features an animated 3D entrance effect on page load. The animation is randomized using <code>rotate3d</code> values along two axes, giving each tile a unique motion as it transitions into view. All layout parameters, such as tile size, spacing, and border thickness, are customizable in real time.</br></br><span class='criticalInfo'>Note: This project is heavy work-in-progress.</br>It currently lacks mobile support and has not been optimized for smaller screen sizes.</span>"
   }
 ]

@@ -1,13 +1,7 @@
 .portal {
   width: 100%;
-  max-width: 500px;
+  max-width: 650px;
   aspect-ratio: 1/1;
-}
-
-@media (min-width: 1300px) {
-  .portal {
-    max-width: 650px;
-  }
 }
 
 .container {
