@@ -1,15 +1,3 @@
-.portal {
-  width: 100%;
-  max-width: 500px;
-  aspect-ratio: 1/1;
-}
-
-@media (min-width: 1300px) {
-  .portal {
-    max-width: 650px;
-  }
-}
-
 .container {
   width: 100%;
   aspect-ratio: 1/1;
@@ -20,8 +8,8 @@
   transition: background-image 3s ease-in-out;
 }
 
-.portal .container::after,
-.portal .container::before {
+.container::after,
+.container::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -45,8 +33,8 @@
 }
 
 @media (min-width: 1200px) {
-  .portal .container::after,
-  .portal .container::before {
+  .container::after,
+  .container::before {
     background-image: conic-gradient(
       from var(--angle),
       #b8b8b8,
@@ -58,8 +46,8 @@
     animation: 5s spin linear infinite;
   }
 
-  .portal:nth-of-type(even) .container::after,
-  .portal:nth-of-type(even) .container::before {
+  .container:nth-of-type(even)::after,
+  .container:nth-of-type(even)::before {
     background-image: conic-gradient(
       from var(--angle),
       #484848,
@@ -93,8 +81,8 @@
   inherits: false;
 }
 
-.portal .container:hover::after,
-.portal .container:hover::before {
+.container:hover::after,
+.container:hover::before {
   background-image: conic-gradient(
     from var(--angle),
     var(--color1, #ff4545),

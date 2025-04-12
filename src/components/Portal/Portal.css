@@ -1,0 +1,128 @@
+.portal {
+  width: 100%;
+  max-width: 650px;
+  display: grid;
+  grid-template-columns: repeat(4, clamp(12px, calc(100% / 10), 32px)) 1fr;
+  grid-template-rows: auto auto repeat(3, clamp(12px, calc(100% / 14), 32px));
+  padding: 0.5rem;
+  opacity: 0;
+  animation: slideInLeft 0.5s ease-out 0.55s forwards;
+}
+
+.portal:nth-of-type(2) {
+  animation: slideInRight 0.5s ease-out 0.55s forwards;
+}
+
+@media (min-width: 1440px) {
+  .portal:nth-of-type(2) {
+    animation: slideInBottom 0.5s ease-out 0.55s forwards;
+  }
+  .portal:nth-of-type(3) {
+    animation: slideInRight 0.5s ease-out 0.55s forwards;
+  }
+}
+
+.portal-title {
+  grid-column: 1/-1;
+  font-family: 'Boldonse', sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.portal-link {
+  grid-column: 1/-1;
+  grid-row: 2 / span 2;
+  margin-top: 1.25rem;
+}
+
+.portal-info {
+  grid-row: 3 / span 2;
+  grid-column: 1;
+  padding: 0;
+  height: 100%;
+  width: fit-content;
+  aspect-ratio: 1/1;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.portal-info svg,
+.portal-repo svg {
+  width: 100%;
+  height: 100%;
+}
+
+.portal-title,
+.portal-info,
+.portal-repo {
+  color: var(--color2);
+}
+
+@media (min-width: 1440px) {
+  .portal-title,
+  .portal-info,
+  .portal-repo {
+    color: grey;
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+.portal:hover .portal-title,
+.portal:hover .portal-info,
+.portal:hover .portal-repo {
+  color: var(--color2);
+}
+
+.portal-repo {
+  grid-row: 4 / span 2;
+  grid-column: 3;
+  height: 100%;
+  width: fit-content;
+  aspect-ratio: 1/1;
+}
+
+.portal-info svg,
+.portal-repo svg {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.portal-info svg:hover,
+.portal-repo svg:hover {
+  transform: scale(1.15);
+  color: var(--color3);
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
