@@ -1,13 +1,7 @@
 .social-bar-container {
-  width: 90%;
+  width: 95%;
   max-width: 1680px;
-  margin: 0.5rem auto 0;
-}
-
-@media (min-width: 768px) {
-  .social-bar-container {
-    margin: 0 auto;
-  }
+  margin: 0 auto;
 }
 
 .social-bar {
