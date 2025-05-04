@@ -12,6 +12,7 @@ const SocialBar = () => {
           href="https://github.com/MatthiasKaesch/landingpage"
           target="_blank"
           rel="noopener noreferrer"
+          className="social-bar-link"
         >
           <GitHubIcon className="social-icon" />
         </a>
@@ -19,10 +20,11 @@ const SocialBar = () => {
           href="https://www.linkedin.com/in/matthias-kaesch/"
           target="_blank"
           rel="noopener noreferrer"
+          className="social-bar-link"
         >
           <LinkedInIcon className="social-icon" />
         </a>
-        <a href="mailto:matthias.kaesch@gmail.com">
+        <a href="mailto:matthias.kaesch@gmail.com" className="social-bar-link">
           <MailIcon className="social-icon" />
         </a>
       </div>
