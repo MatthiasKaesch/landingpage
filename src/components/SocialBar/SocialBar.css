@@ -48,12 +48,16 @@
     transform: rotate3d(1, 1, 0, 90deg);
   }
   50% {
-    transform: rotate3d(1, 1, 0, 45deg);
+    transform: rotate3d(1, 1, 0, 0deg);
   }
   60% {
     transform: scale(1.2);
+    filter: brightness(1.6);
+    box-shadow: 0 0 24px 4px var(--gold), inset 0 0 12px 8px var(--gold);
   }
   to {
     transform: scale(1);
+    filter: brightness(1);
+    box-shadow: none;
   }
 }
